@@ -151,7 +151,7 @@ card.addEventListener('dblclick', function (event) {
   card.classList.toggle('large');
 });
 
-// stop proparation here
+// stopPropagation here
 const box = document.getElementById('box');
 const myBtn = document.getElementById('button1');
 
