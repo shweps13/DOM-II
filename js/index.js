@@ -150,3 +150,9 @@ const card = document.querySelector('img');
 card.addEventListener('dblclick', function (event) {
   card.classList.toggle('large');
 });
+
+// prevent default here
+function sign(event) {
+    alert('Sign little bit later');
+    event.preventDefault();
+}
