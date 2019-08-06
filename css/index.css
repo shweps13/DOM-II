@@ -358,6 +358,11 @@ img {
   margin-bottom: 1%;
   border-radius: 5px;
 }
+.home #sel {
+  background-color: orange;
+  border: 1px solid gray;
+  border-radius: 3px;
+}
 .home .content-pick {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;

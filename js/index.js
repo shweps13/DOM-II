@@ -134,3 +134,13 @@ if (document.body.scrollTop > 900 || document.documentElement.scrollTop > 900) {
     document.getElementById("dest").className = "slideUp";
 }
 }
+
+// Select event
+function logSelection(event) {
+    const log = document.getElementById('sel');
+    const selection = event.target.value.substring(event.target.selectionStart, event.target.selectionEnd);
+    log.textContent = `You selected: ${selection}`;
+  }
+  
+  const inputSel = document.querySelector('input');
+  inputSel.addEventListener('select', logSelection);
