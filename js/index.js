@@ -151,6 +151,18 @@ card.addEventListener('dblclick', function (event) {
   card.classList.toggle('large');
 });
 
+// stop proparation here
+const box = document.getElementById('box');
+const myBtn = document.getElementById('button1');
+
+box.addEventListener('click', function () {
+    this.style.backgroundColor = "blue";
+})
+myBtn.addEventListener('click', function(event) {
+    event.stopPropagation();
+    console.log('The button was pressed');
+})
+
 // prevent default here
 function sign(event) {
     alert('Sign little bit later');
