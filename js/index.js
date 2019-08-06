@@ -96,3 +96,20 @@ document.addEventListener("drop", function(event) {
     event.target.appendChild( dragged );
   }
 }, false);
+
+
+// Load event
+window.addEventListener('load', (event) => {
+    console.log('Page is fully loaded');
+  });
+
+// Focus event
+const focusColor = document.querySelector('input');
+
+focusColor.addEventListener('focus', (event) => {
+  event.target.style.background = 'lightgreen';    
+});
+
+focusColor.addEventListener('blur', (event) => {
+  event.target.style.background = '';    
+});
