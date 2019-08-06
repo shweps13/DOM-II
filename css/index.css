@@ -231,6 +231,9 @@ img {
   margin: 0 33%;
   padding: 0 10%;
 }
+.home .large {
+  transform: scale(1.2);
+}
 .home .intro {
   padding: 90px 0 10px;
   border-bottom: 2px dashed #C0C0C0;

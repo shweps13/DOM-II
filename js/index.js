@@ -144,3 +144,9 @@ function logSelection(event) {
   
   const inputSel = document.querySelector('input');
   inputSel.addEventListener('select', logSelection);
+
+// Dbclick event
+const card = document.querySelector('img');
+card.addEventListener('dblclick', function (event) {
+  card.classList.toggle('large');
+});
