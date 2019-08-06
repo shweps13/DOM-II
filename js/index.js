@@ -113,3 +113,24 @@ focusColor.addEventListener('focus', (event) => {
 focusColor.addEventListener('blur', (event) => {
   event.target.style.background = '';    
 });
+
+// Resize event
+window.addEventListener('resize', display);
+function display() {
+    document.querySelector('.width').innerText = document.documentElement.clientWidth;
+    document.querySelector('.height').innerText = document.documentElement.clientHeight;
+}
+display();
+
+// Scroll event
+window.addEventListener('scroll', function() {
+    document.getElementById('showScroll').innerHTML = pageYOffset + 'px';
+  });
+
+window.onscroll = function() {scrollImg()};
+
+function scrollImg() {
+if (document.body.scrollTop > 900 || document.documentElement.scrollTop > 900) {
+    document.getElementById("dest").className = "slideUp";
+}
+}

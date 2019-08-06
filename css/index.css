@@ -226,6 +226,11 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
+.footer .res {
+  width: 33%;
+  margin: 0 33%;
+  padding: 0 10%;
+}
 .home .intro {
   padding: 90px 0 10px;
   border-bottom: 2px dashed #C0C0C0;
@@ -305,6 +310,36 @@ img {
     width: 100%;
   }
 }
+.home .content-destination #myimg {
+  display: none !important;
+}
+.home .content-destination .slideUp {
+  animation-name: slideUp;
+  -webkit-animation-name: slideUp;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  visibility: visible;
+}
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+@-webkit-keyframes slideUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
 .home .content-destination img {
   border-radius: 10px;
 }
@@ -337,6 +372,13 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .slideUp {
+  animation-name: slideUp;
+  -webkit-animation-name: slideUp;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  visibility: visible;
 }
 @media (max-width: 500px) {
   .home .content-pick .destination {
