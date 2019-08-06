@@ -297,6 +297,9 @@ img {
   width: 75%;
   margin: 0 auto 30px;
 }
+.home .content-destination .key {
+  margin-top: 3%;
+}
 @media (max-width: 500px) {
   .home .content-destination {
     width: 100%;
