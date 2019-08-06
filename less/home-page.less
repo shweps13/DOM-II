@@ -89,6 +89,22 @@
     img {
       border-radius: 10px;
     }
+    #draggable {
+      width: 60%;
+      padding-top: 2%;
+      margin: 0 20%;
+      text-align: center;
+      background: white;
+      border-radius: 5px;
+    }
+    
+    .dropzone {
+      width: 100%;
+      padding: 2%;
+      background: orange;
+      margin-bottom: 1%;
+      border-radius: 5px;
+    }
   }
 
   .content-pick {
@@ -104,6 +120,8 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+     
+    
 
       @media @mobile {
         width: 80%;
@@ -113,6 +131,9 @@
       .btn {
         .button-creator(200px, 45px, @button-bg, @white, 1.8rem);     
       }
+    }
+    .destination:nth-child(2) {
+      background-color: lightgrey;
     }
   }
 

@@ -308,6 +308,21 @@ img {
 .home .content-destination img {
   border-radius: 10px;
 }
+.home .content-destination #draggable {
+  width: 60%;
+  padding-top: 2%;
+  margin: 0 20%;
+  text-align: center;
+  background: white;
+  border-radius: 5px;
+}
+.home .content-destination .dropzone {
+  width: 100%;
+  padding: 2%;
+  background: orange;
+  margin-bottom: 1%;
+  border-radius: 5px;
+}
 .home .content-pick {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
@@ -352,4 +367,7 @@ img {
 .home .content-pick .destination .btn:hover {
   background: #FFFFFF;
   color: #17A2B8;
+}
+.home .content-pick .destination:nth-child(2) {
+  background-color: lightgrey;
 }
