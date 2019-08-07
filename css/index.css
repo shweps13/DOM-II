@@ -226,6 +226,14 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
+.footer .res {
+  width: 33%;
+  margin: 0 33%;
+  padding: 0 10%;
+}
+.home .large {
+  transform: scale(1.2);
+}
 .home .intro {
   padding: 90px 0 10px;
   border-bottom: 2px dashed #C0C0C0;
@@ -297,13 +305,66 @@ img {
   width: 75%;
   margin: 0 auto 30px;
 }
+.home .content-destination .key {
+  margin-top: 3%;
+}
 @media (max-width: 500px) {
   .home .content-destination {
     width: 100%;
   }
 }
+.home .content-destination #myimg {
+  display: none !important;
+}
+.home .content-destination .slideUp {
+  animation-name: slideUp;
+  -webkit-animation-name: slideUp;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  visibility: visible;
+}
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+@-webkit-keyframes slideUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
 .home .content-destination img {
   border-radius: 10px;
+}
+.home .content-destination #draggable {
+  width: 60%;
+  padding-top: 2%;
+  margin: 0 20%;
+  text-align: center;
+  background: white;
+  border-radius: 5px;
+}
+.home .content-destination .dropzone {
+  width: 100%;
+  padding: 2%;
+  background: orange;
+  margin-bottom: 1%;
+  border-radius: 5px;
+}
+.home #sel {
+  background-color: orange;
+  border: 1px solid gray;
+  border-radius: 3px;
 }
 .home .content-pick {
   padding-top: 30px;
@@ -319,6 +380,13 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .slideUp {
+  animation-name: slideUp;
+  -webkit-animation-name: slideUp;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  visibility: visible;
 }
 @media (max-width: 500px) {
   .home .content-pick .destination {
@@ -349,4 +417,7 @@ img {
 .home .content-pick .destination .btn:hover {
   background: #FFFFFF;
   color: #17A2B8;
+}
+.home .content-pick .destination:nth-child(2) {
+  background-color: lightgrey;
 }

@@ -1,5 +1,7 @@
 .home {
-
+  .large {
+    transform: scale(1.2);
+  }
   .intro {
     padding: 90px 0 10px;
     border-bottom: 2px dashed @navigation-border;
@@ -20,7 +22,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
+  
     
     .text-content {
       width: 48%;
@@ -78,15 +80,73 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    .key {
+    margin-top: 3%;
+    }
+
     @media @mobile {
       width: 100%;
     }
+    #myimg {
+      display: none !important;
+    }
+    .slideUp {
+      animation-name: slideUp;
+      -webkit-animation-name: slideUp;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+    }
+    
+    @keyframes slideUp {
+      0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+      } 
+      100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+      }
+    }
+    
+    @-webkit-keyframes slideUp {
+      0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+      } 
+      100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+      }
+    }
+
+
 
     img {
       border-radius: 10px;
     }
+    #draggable {
+      width: 60%;
+      padding-top: 2%;
+      margin: 0 20%;
+      text-align: center;
+      background: white;
+      border-radius: 5px;
+    }
+    
+    .dropzone {
+      width: 100%;
+      padding: 2%;
+      background: orange;
+      margin-bottom: 1%;
+      border-radius: 5px;
+    }
   }
-
+  #sel {
+    background-color: orange;
+    border: 1px solid gray;
+    border-radius: 3px;
+  }
   .content-pick {
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
@@ -100,6 +160,16 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      .slideUp {
+        animation-name: slideUp;
+        -webkit-animation-name: slideUp;
+        animation-duration: 1s;
+        -webkit-animation-duration: 1s;
+        visibility: visible;
+      }
+      
+
+    
 
       @media @mobile {
         width: 80%;
@@ -110,5 +180,10 @@
         .button-creator(200px, 45px, @button-bg, @white, 1.8rem);     
       }
     }
+    .destination:nth-child(2) {
+      background-color: lightgrey;
+    }
   }
+
+  
 }// home
